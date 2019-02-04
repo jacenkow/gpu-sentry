@@ -1,16 +1,16 @@
 # gpu-sentry
-Flask-based package for monitoring utilisation of GPUs.
+Flask-based package for monitoring utilisation of nVidia GPUs.
 
 ![Monitor](img/monitor.png)
 
 ## Motivation
 Instead of checking each of your machines with `nvidia-smi` command, a client
-running on the machines is sending periodically statistics about GPU
+running on the machines is sending periodically statistics about GPU memory
 utilisation. The central server is collecting the requests and displays them on
 a single website.
 
 ## Installation
-Run `pip install -r requirements.txt` to install all the dependencies.
+Run `pip install -e .` to install all the dependencies and the package itself.
 
 ## Configuration
 Most of the settings can be found in `config.py`.
